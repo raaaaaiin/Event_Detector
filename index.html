@@ -5,6 +5,17 @@
     <title>Event Detector</title>
 </head>
 <body>
-   
+    <script>
+        // Function to display the triggered event
+        function logEvent(event) {
+            console.log(`Event: ${event.type}`);
+        }
+
+        // Add event listeners to the document
+        document.addEventListener("click", logEvent);
+        document.addEventListener("keydown", logEvent);
+        document.addEventListener("mousemove", logEvent);
+        document.addEventListener("resize", logEvent);
+    </script>
 </body>
 </html>
